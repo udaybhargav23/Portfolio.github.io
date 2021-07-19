@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="sicon.png">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0;
+            padding:0;
+        }
+        h1{
+            text-align: center;
+            color: darkslateblue;
+        }
+        #table1,#head1,#data1{
+            padding:10px;
+        }
+        .nav-bar{
+            margin-bottom: 10px;
+            font-size: larger;
+            background-color: brown;
+            display: flex;
+            justify-content: flex-end;
+            text-align: center;
+        }
+        .a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+        .a:hover{
+            background-color: white;
+            color: black;
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+        }
+        .img{
+            width:30%;
+            height:400px;
+            padding: 20px;
+        }
+        .p {
+            width: 20%;
+            height: 10%;
+            margin-top:150px;
+            margin-right:20px;
+            font-style: italic;
+            background-color: skyblue;
+            font-size: larger;
+        }
+        #table1{
+            background-color: papayawhip;
+        }
+        #head1:nth-child(even), #data1:nth-child(even){
+            background-color: palevioletred;
+        }
+        #head1:nth-child(odd), #data1:nth-child(odd){
+            background-color: plum;
+        }
+        #div1{
+            border:15px solid blanchedalmond;
+            font-size: large;
+            background-color: slategray;
+        }
+        #div2{
+            border:15px solid blanchedalmond;
+            font-size: large;
+            background-color: whitesmoke;
+            padding: 15px;
+        }
+        #i1{
+            padding-left: 40%;
+            width:400px;
+            height: 300px;
+        }
+        #table2, #head2, #row2, #data2{
+            padding:15px;
+        }
+        #lg1{
+            color:darkred;
+            font-size: larger;
+        }
+        #fs1{
+            background-color: rgb(147, 186, 189);
+        }
+        #li1{
+            padding: 15px;
+            font-size: larger;
+        }
+        #foo1{
+            margin-top: 15px;
+        }
+        #i2{
+            margin-left: 150px;
+        }
+        #form1{
+            margin: 15px;
+        }
+        #sub1{
+            margin-left: 50px;
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 600px){
+            .nav-bar{
+                flex-direction: column;
+            }
+            .row{
+                flex-direction: column;
+                padding: 0;
+            }
+            .img{
+                height:300px;
+                width:300px;
+            }
+            .p{
+                display:flex;
+                margin-top: 0;
+                margin-left: 10px;
+                flex-direction: column;
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body id="home">
+    <div class="nav-bar">
+        <a class="a" href="#home">Home</a>
+        <a class="a" href="#about">About</a>
+        <a class="a" href="#skills">Skills</a>
+        <a class="a" href="#experience">Experience</a>
+        <a class="a" href="#projects">Projects</a>
+        <a class="a" href="#achievements">Achievements</a>
+        <a class="a" href="#contact">Contact</a>
+    </div>
+    <div class = "row">
+        <img class="img"src="my_pic.jpg">
+        <p class="p">You are at right place if you would like to see the <a href="Uday_CV.pdf">resume.</a></p>
+    </div>
+    <h1 id="about"><u>About</u></h1>
+    <fieldset id="fs1">
+        <legend id="lg1"><b>Bio</b></legend>
+        <table>
+            <tr id="row2">
+                <th id="head2">Name:</th>
+                <td id="data2">Mekala Uday Bhargav</td>
+            </tr>
+            <tr id="row2" colspan="4">
+                <th id="head2" valign="top">Address: </th>
+                <td id="data2"><address>
+                    H.no. 6-22-708,<br>
+                    Rajeev nagar colony,<br>
+                    Nizamabad,<br>
+                    Telangana,<br>
+                    India, 503002.
+                </address></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset  id="fs1">
+        <legend id="lg1"><b>Education</b></legend>
+        <table id="table2">
+            <tr id="row2">
+                <th id="head2">Institution name</th>
+                <th id="head2">Degree</th>
+                <th id="head2">Percentage/GPA</th>
+                <th id="head2">Passout</th>
+            </tr>
+            <tr id="row2">
+                <td id="data2">Vijay high school</td>
+                <td id="data2">SSC</td>
+                <td id="data2">95%</td>
+                <td id="data2">2015</td>
+            </tr>
+            <tr id="row2">
+                <td id="data2">Narayana Junior College</td>
+                <td id="data2">TSBIE</td>
+                <td id="data2">95%</td>
+                <td id="data2">2017</td>
+            </tr>
+            <tr id="row2">
+                <td id="data2">Indian Institite of Information Technology, Kottayam</td>
+                <td id="data2">B.tech</td>
+                <td id="data2">7.45</td>
+                <td id="data2">2021</td>
+            </tr>
+        </table>
+    </fieldset>
+    <h1 id="skills"><u>Skills</u></h1>
+    <fieldset id="fs1">
+        <legend id="lg1"><b>Major fundamentals</b></legend>
+        Java<br>
+        Web development<br>
+        Data structures and algorithms
+    </fieldset>
+    <fieldset id="fs1">
+        <legend id="lg1"><b>Tools and technologies</b></legend>
+        Python<br>
+        SQL<br>
+        UNIX
+    </fieldset>
+    <fieldset id="fs1">
+        <legend id="lg1"><b>Interpersonal skills</b></legend>
+        Communication<br>
+        Team leadership<br>
+        Mindfulness
+    </fieldset>
+    <fieldset id="fs1">
+        <legend id="lg1"><b>Other skills</b></legend>
+        Full-stack development<br>
+        DBMS
+    </fieldset>
+    <fieldset id="fs1">
+        <legend id="lg1"><b>Courses undertaken</b></legend>
+        <table>
+            <tr>
+                <td>Artificial Intelligence</td>
+                <td>Blockchain and cryptocurrency</td>
+            </tr>
+            <tr>
+                <td>Computer organisation and architecture</td>
+                <td>Data Structure And Algorithms</td>
+            </tr>
+            <tr>
+                <td>Database Management System</td>
+                <td>Design And Analysis Of Algorithms</td>
+            </tr>
+            <tr>
+                <td>Discrete Mathematics</td>
+                <td>Distributed Systems</td>
+            </tr>
+            <tr>
+                <td>Linear algebra</td>
+                <td>Object Oriented Programming</td>
+            </tr>
+            <tr>
+                <td>Operating systems</td>
+                <td>Probability And Statistics</td>
+            </tr>
+            <tr>
+                <td>Theory of computation</td>
+            </tr>
+        </table>
+    </fieldset>
+    <footer id="foo1">
+        <b>Click this <a href="certifications.html">link</a> to see the certifications of mentioned above.</b>
+    </footer>
+    <h1 id="experience"><u>Experience</u></h1>
+    <div id="div2">
+        <dl>
+            <dt><img src="capg_logo.png" style="float: left" width=50px height=50px><b>Analyst trainee at Capgemini</b></dt>
+            <dd>-Undergone 4 months vigorous adapt training on the concepts of Web development(HTML, CSS, and JS), RDBMS and SQL, 
+                Java and its DSA, OOPS, Exceptional handling, UNIX, Manual testing, SDLC.
+            </dd>
+        </dl>
+    </div>
+    <div id="div2">
+        <dl>
+            <dt><img src="code_logo.png" style="float: left" width=50px height=50px><b>Python developer intern at Code speedy technologies</b></dt>
+            <dd>-This Internship taught me a good lesson of managing the tight deadlines and made my communication skills better by working on the implementation of various expert problems on DSA and Django.</dd>
+        </dl>
+    </div>
+    <footer id="foo1">
+        <b>Click this <a href="certifications.html">link</a> to see the certifications of mentioned above.</b>
+    </footer>
+    <h1 id="projects"><u>Projects</u></h1>
+    <table id="table1">
+        <tr id="row1">
+            <th id="head1" colspan="3" style="background-color: salmon;">Projects</th>
+        </tr>
+        <tr id="row1">
+            <th id="head1">Vocal and music segregation</th>
+            <th id="head1">Image caption generator</th>
+            <th id="head1">Create a blog using django</th>
+        </tr>
+        <tr id="row1">
+            <td id="data1">
+                <p title = "Click See more... below to check the implementation">A project being developed under a CSE
+                faculty of our college. This project is implemented to segregate the music and vocals from a song
+                using deep learning in an efficient way. This project taught me the importance of meeting tight
+                deadlines.</p>
+                <a href="https://github.com/udaybhargav23/Vocal-and-music-segregation-using-Deep-learning" title="You will be redirected to github">See more...</a>
+            </td>
+            <td id="data1"><p title = "Click See more... below to check the implementation">This was a project which started as just an
+                experiment by a bunch of tech enthusiasts out of curiosity. This project implements a code that takes
+                an image as input and outputs the caption of the image in a short yet meaningful way. This project
+                especially taught me the importance of working as a team and bringing the best out of each other.
+                </p>
+                <a href="https://github.com/udaybhargav23/Image-caption-generator-using-deep-learning." title="You will be redirected to github">See more...</a>
+            </td>
+            <td id="data1"><p title = "Click See more... below to check the implementation">A Project developed in the early days of my college life, which
+                introduced me to the world of Web Development. I was a part of the team which worked on the
+                back end part of the code for developing an article blog,, which facilitates people to log in and read
+                top rated articles on dashboard, edit their profile and more such basic activities.</p>
+                <a href="https://github.com/udaybhargav23/Create-a-blog-using-Django" title="You will be redirected to github">See more...</a>
+            </td>
+        </tr>
+    </table>
+    <h1 id="achievements"><u>Achievements</u></h1>
+    <ul>
+        <li id="li1">International mental aritmetic 2nd runner up held at chennai.</li>
+        <li id="li1">Winner of District level science fair competition.</li>
+        <li id="li1">Elected as president of cultural club in IIIT Kottayam.</li>
+        <li id="li1">Executive member of QuizInc, IIIT Kottayam.</li>
+        <li id="li1">Sports Committee member of Inter-IIIT Sports meet 2019 and 2020.</li>
+        <li id="li1">Former member of Tech fest coding competitions in IIIT Kottayam.</li>
+    </ul>
+    <footer id="foo1">
+        <b>Click this <a href="certifications.html">link</a> to see the certifications of mentioned above.</b>
+    </footer>
+    <h1 id="contact"><u>Contact</u></h1>
+    <div id="div2" style="background-color: white;">
+        <p>Click this <a href="https://github.com/udaybhargav23"><i class="fa fa-github" style="font-size:48px"></i></a> to see the github profile.</p>
+        <p> Click this <a href="https://www.linkedin.com/in/uday-bhargav-a08491157/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a> to see the Linkedin profile.</p>
+        <p><a href="callto:8309494856">Call</a></p>
+        <p><a href="mailto:udaybhargav23@gmail.com">Send email</a></p>
+        <form action="">
+            <label for="name" id="form1">Name: </label>
+            <input type="text" id="name"><br>
+            <textarea rows="8" cols="40" id="form1" placeholder="Enter your query here: "></textarea><br>
+            <input type="submit" value="Submit" id="sub1">
+        </form>
+    </div>
+</body>
+</html>
